@@ -100,6 +100,12 @@
    </style>
 
    <script>
+       if (/Mobi|Android/i.test(navigator.userAgent)) {
+           window.location.href = "mobile.html";
+       } else {
+           window.location.href = "index.html";
+       }
+
        function openModal(imgSrc) {
            const modal = document.getElementById("myModal");
            const modalImg = document.getElementById("img01");
